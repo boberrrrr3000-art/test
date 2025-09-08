@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="ru", lang="en">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="{% static 'main/style.css' %}">
+  <title>Деменция</title>
+</head>
+<body>
+  <div class="chat">
+  <form method="post">
+      {% csrf_token %}
+    {{ form.title }}
+    <button type="submit">Отправить</button>
+  </form>
+
+  {% for el in impyt %}
+      <p class="message">{{ el.title }}</p>
+   {% endfor %}  
+   </div>
+</body>
+
+
+</html>

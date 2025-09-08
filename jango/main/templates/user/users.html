@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="ru", lang="en">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+
+  <title>Пользователи</title>
+</head>
+<body>
+    {% for el in name %}
+    <h3>Логин: {{ el.login }}</h3>   
+    <h3>Пароль: {{ el.password }}</h3>
+    {% endfor %}
+</body>
+
+
+</html>
