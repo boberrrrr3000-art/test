@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    '192.168.0.125',  # Add this line
+    '192.168.0.125', # Add this line
     # Add any other allowed hosts or domain names here
     ]
 
